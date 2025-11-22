@@ -173,14 +173,14 @@ body {
         transition: all 0.4s ease;
 
         p1 {
-            .logo.assign-gradient(to right);
-            background: @logo-gradient !important;
+            color: @default-text-colour;
             .syne-text();
-            padding-inline: 5px;
+            padding: 5px;
             font-size: 1.1rem;
             opacity: 1;
             white-space: nowrap;
             border-radius: 5px;
+            font-weight: 500;
             transition: opacity 0.4s ease;
         }
 
@@ -400,6 +400,13 @@ body {
             order: -1;
             min-height: 40px;
 
+            p1 {
+                .logo.assign-gradient(to right);
+                background: @logo-gradient !important;
+                color: @default-text-colour;
+                font-weight: normal;
+            }
+
             img {
                 width: 40px;
             }
@@ -503,5 +510,22 @@ body {
         .title {
             font-size: 1.3rem;
         }
+    }
+}
+
+.outside-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
+
+    .outside {
+        width: 100%;
+        height: 100%;
+        display: block;
+        // filter: blur(2px);
     }
 }
