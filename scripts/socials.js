@@ -4,7 +4,7 @@ $(document).ready(function() {
 
         $.each(socials, function(key, value) {
             const $social = $socialsContainer.find(`.social.${key}`);
-
+            
             if ($social.length && value.icon) {
                 const $img = $('<img>').attr('src', value.icon);
                 $social.append($img);

@@ -1,17 +1,17 @@
 {
     "linktree": {
         "url": "https://linktr.ee/ed_neurotech",
-        "icon": "images/socials/linktree.png"
+        "icon": "/images/socials/linktree.png"
     },
     "linkedin": {
         "url": "https://www.linkedin.com/company/edinburgh-neurotech",
-        "icon": "images/socials/linkedin.png"
+        "icon": "/images/socials/linkedin.png"
     },    "instagram": {
         "url": "https://www.instagram.com/ed_neurotech",
-        "icon": "images/socials/instagram.png"
+        "icon": "/images/socials/instagram.png"
     },
     "github": {
         "url": "https://github.com/edneurotech",
-        "icon": "images/socials/github.png"
+        "icon": "/images/socials/github.png"
     }
 }
