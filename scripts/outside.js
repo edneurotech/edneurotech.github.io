@@ -44,8 +44,8 @@ $(document).ready(function() {
     const bodyPadding = 20;
 
     function updateDimensions() {
-        width = canvas.width = window.innerWidth;
-        height = canvas.height = window.innerHeight;
+        width = canvas.width = document.documentElement.clientWidth;
+        height = canvas.height = document.documentElement.clientHeight;
 
         const bodyWidth = Math.min(width, bodyMaxWidth + bodyPadding);
         bodyLeft = (width - bodyWidth) / 2;
@@ -61,7 +61,7 @@ $(document).ready(function() {
             spacing * 4
         ];
     }
-
+    
     updateDimensions();
 
     $(window).on('resize', function() {

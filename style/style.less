@@ -82,6 +82,12 @@ body {
     padding: 0;
 }
 
+//begin defaults
+img {
+    user-select: none;
+}
+//ends defaults
+
 .body-container {
     margin-inline: auto;
     padding: 10px;
@@ -104,10 +110,6 @@ body {
     background-color: @body-container-background-colour;
 
     //begin defaults
-    img {
-        user-select: none;
-    }
-    
     a {
         color: @default-link-colour;
         .syne-text();
@@ -517,8 +519,8 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     z-index: -1;
     pointer-events: none;
 
