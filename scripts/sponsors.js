@@ -1,4 +1,4 @@
-$(document).ready(function() {
+window.attachSponsors = function() {
     $('.sponsor').each(function() {
         const $sponsor = $(this);
         const url = $sponsor.attr('data-src');
@@ -6,6 +6,8 @@ $(document).ready(function() {
         if (url) {
             $sponsor.css('cursor', 'pointer');
             $sponsor.attr('tabindex', '0');
+
+            $sponsor.off('click keypress');
 
             $sponsor.on('click', function() {
                 window.open(url, '_blank');
@@ -19,4 +21,8 @@ $(document).ready(function() {
             });
         }
     });
+};
+
+$(document).ready(function() {
+    window.attachSponsors();
 });
